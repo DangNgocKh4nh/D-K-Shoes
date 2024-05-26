@@ -24,12 +24,48 @@
     }
     echo'<br/>';
     echo'Họ tên: '.$row['HoTen'].' - SDT: '.$row['DienThoai'].' - Ngày sinh: '.$row['NgaySinh'].' - Email: '.$row['Email'].' <Br/>Địa chỉ: '.$row['DiaChi'].'        ';
-    echo '<div class="tool"><a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=sua&id='.$row['MaTaiKhoan'].'"><i class="far fa-edit"></i></a>  ';
-    if($row['Xoa'] == 1) {
-        echo '<a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=khoiphuc&id='.$row['MaTaiKhoan'].'"><i class="fas fa-trash-restore-alt"></i></a>';
-    } else {
-        echo '<a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=xoa&id='.$row['MaTaiKhoan'].'"><i class="far fa-trash-alt"></i></a>';
-    }
-    echo '</div></div>';
+    echo '<div class="tool">
+        <a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=sua&id='.$row['MaTaiKhoan'].'">
+            <button style="
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Update</button>
+        </a>  ';
+
+        if ($row['Xoa'] == 1) {
+        echo '<a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=khoiphuc&id='.$row['MaTaiKhoan'].'">
+            <button style="
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Khôi phục</button>
+          </a>';
+        } else {
+        echo '<a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=xoa&id='.$row['MaTaiKhoan'].'">
+            <button style="
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Xóa</button>
+          </a>';
+        }
+
+        echo '</div></div>';
 }
 ?>

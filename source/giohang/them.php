@@ -23,7 +23,7 @@ if(isset($_SESSION['cart'][$id])){
         } 
           
     }
-    ChangeURL("../source/giohang/index.php");
+    ChangeURL("../giohang/index.php");
     exit();
 
 ?>

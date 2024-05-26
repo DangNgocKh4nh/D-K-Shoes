@@ -41,7 +41,7 @@ echo '<form action="/D&KShoes/source/qlyHangSX/index.php?mod=update&id='.$id.'" 
     echo'<p><input id="TenHangSX" type="text" size="50" name="TenHangSX" value="'.$row['TenHangSanXuat'].'"/></p>';
     ?>
                 
-            <p><input type='submit' name="edithangsx" value='Sửa tên thương hiệu' onclick=" return Check()" />
+            <p><input type='submit' name="edithangsx" value='Update' onclick=" return Check()" />
             <a href='/D&KShoes/source/qlyHangSX/index.php?mod=panel'>Quay lại</a></p>
     </form>
 </div>

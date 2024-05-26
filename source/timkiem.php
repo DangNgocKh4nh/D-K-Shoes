@@ -44,7 +44,7 @@ if (isset($_REQUEST['ok']))
             echo'</div>';
         } 
         else {
-            echo "Khong tim thay ket qua!";
+            echo "<div class='mainmenu'><p><h2 style='font-weight: normal;'>Không tìm thấy kết quả</h2></p>";
         }
     }
 }

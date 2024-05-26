@@ -19,10 +19,10 @@ session_start();
 <body>
     <div class="header">
         <div class="topbar">
-            <div class="center"><a href="/"><font color="#fff">Trang chủ chính</font></a> |
+            <div class="center"><a href="../index.php"><font color="#fff">Trang chủ chính</font></a> |
                 <span><a href="/D&KShoes/source/adminpanel"><font color="#fff">Trang quản lý của ADMIN</font></a></span>
                 <ul class="listtopbar">
-                    <li><a href="/"><i style='font-size:12px' class='fas'>&#xf007;</i> 
+                    <li><a href="/"><i style='font-size:12px' class='fas'></i> 
                     <?php
                         if(isset($_SESSION['username']) && $_SESSION['username']) {
                             $username = $_SESSION['username'];

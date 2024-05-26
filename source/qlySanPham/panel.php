@@ -31,12 +31,48 @@
         echo 'Số lượng hàng: '.$row['SoLuong'].' - Ngày nhập: '.$row['NgayNhap'].'';
         echo '<br/>Thương hiệu: '.$hsx['TenHangSanXuat'].' - Loại: '.$lsp['TenLoaiSanPham'].'';
         echo '<br/><img width="100" height="100" src="/D&KShoes/source/images/'.$row['HinhURL'].'"><br/>';
-        echo '<div class="tool"><a href="/D&KShoes/source/qlySanPham/index.php?mod=update&id='.$row['MaSanPham'].'"><i class="far fa-edit"></i></a>  ';
-        if($row['BiXoa'] == 1) {
-            echo '<a href="/D&KShoes/source/qlySanPham/index.php?mod=restore&id='.$row['MaSanPham'].'"><i class="fas fa-trash-restore-alt"></i></a>';
+        echo '<div class="tool">
+        <a href="/D&KShoes/source/qlySanPham/index.php?mod=update&id='.$row['MaSanPham'].'">
+            <button style="
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Update</button>
+        </a>  ';
+
+        if ($row['BiXoa'] == 1) {
+        echo '<a href="/D&KShoes/source/qlySanPham/index.php?mod=restore&id='.$row['MaSanPham'].'">
+            <button style="
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Khôi phục</button>
+          </a>';
         } else {
-            echo '<a href="/D&KShoes/source/qlySanPham/index.php?mod=del&id='.$row['MaSanPham'].'"><i class="far fa-trash-alt"></i></a>';
+        echo '<a href="/D&KShoes/source/qlySanPham/index.php?mod=del&id='.$row['MaSanPham'].'">
+            <button style="
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Xóa</button>
+          </a>';
         }
+
         echo '</div></div>';
     }
 ?>

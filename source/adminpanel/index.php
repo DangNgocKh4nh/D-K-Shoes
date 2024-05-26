@@ -1,5 +1,5 @@
 <?php
-require "../header.php";
+require "../adminpanel/header.php";
 $mod = "panel";
 if(isset($_GET["mod"]))
     $mod = $_GET["mod"];

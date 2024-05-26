@@ -15,11 +15,11 @@ if (isset($_GET['id'])) {
 
         $sql = "UPDATE taikhoan
         SET HoTen  = '$HoTen',
-        DiaChi  = '$DiaChi',
-        DienThoai    = '$DienThoai',
-        Email     = '$Email',
-        NgaySinh  = '$NgaySinh',
-        Quyen  = '$Quyen'
+            DiaChi  = '$DiaChi',
+            DienThoai    = '$DienThoai',
+            Email     = '$Email',
+            NgaySinh  = '$NgaySinh',
+            Quyen  = '$Quyen'
         WHERE 
             MaTaiKhoan = '$id'";
 
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
     }
 
     echo '<div class="vien"><div class="center">';
-    echo '<form action="../D&KShoes/source/qlyTaiKhoan/index.php?mod=sua&id='.$id.'" method="POST">';
+    echo '<form action="/D&KShoes/source/qlyTaiKhoan/index.php?mod=sua&id='.$id.'" method="POST">';
     echo'<p><input id="HoTen" type="text" size="50" name="HoTen" value="'.$result['HoTen'].'"/></p>';
     echo'<p><input id="DiaChi" type="text" size="50" name="DiaChi" value="'.$result['DiaChi'].'"/></p>';
     echo'<p><input id="DienThoai" type="number" size="50" name="DienThoai" value="'.$result['DienThoai'].'"/></p>';

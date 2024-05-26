@@ -13,7 +13,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/D&KShoes/source/giaodien/mystyle.css">
     <title>D&K Shoes</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/6d2e813cd5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -22,7 +22,7 @@ session_start();
             <div class="center">
                 <span>Mở cửa: 9h đến 20h, chủ nhật 10h đến 16h</span>
                 <ul class="listtopbar">
-                    <li><a href="/"><i style='font-size:12px' class='fas'></i> 
+                    <li><a href="/D&KShoes/source/dangnhap.php"><i style='font-size:12px' class='fas'>&#xf007;</i> 
                     <?php
                         if(isset($_SESSION['username']) && $_SESSION['username']) {
                             $username = $_SESSION['username'];
@@ -63,7 +63,7 @@ session_start();
         </div> 
         <div class="cenbar">
             <div class="center">
-                <a class="logo" href="/"><img src="/D&KShoes/source/logo.png"></a>
+                <a class="logo" href="/D&KShoes/source/"><img src="/D&KShoes/source/logo.png"></a>
                 <div class="search">
                     <form action="/D&KShoes/source/timkiem.php" method="get"><input type="text" size="50" name="search" style="display: inline-block;">
                     <button type="submit" name="ok"><i class="fas fa-search"></i>Tìm kiếm</button>
@@ -71,7 +71,7 @@ session_start();
                 </div>
                 <div class="lienlac">
                     <div id="phone">
-                    <a href="/D&KShoes/giohang/index.php" style="text-decoration: none; color: #fff;">
+                    <a href="/D&KShoes/source/giohang/index.php" style="text-decoration: none; color: #fff;">
                         <i class="fas fa-shopping-basket"></i>
                     </a>
                     </div>
@@ -79,14 +79,14 @@ session_start();
                     <?php
                         if(isset($_SESSION['cart'])) {
                             
-                            echo'<a href="../giohang/index.php" style="text-decoration: none;">
+                            echo'<a href="/D&KShoes/source/giohang/index.php" style="text-decoration: none;">
                             <span id="sdt">('.count($_SESSION['cart']).') sản phẩm</span></a><br/>';
                         } else { 
-                            echo'<a href="../giohang/index.php" style="text-decoration: none;">
+                            echo'<a href="/D&KShoes/source/giohang/index.php" style="text-decoration: none;">
                             <span id="sdt">(0) sản phẩm</span></a><br/>';
                         }
                     ?>
-                        <a href="../giohang/index.php" style="text-decoration: none;"><span id="dd"><font color="#ffdada">Giỏ hàng</font> </span>
+                        <a href="/D&KShoes/source/giohang/index.php" style="text-decoration: none;"><span id="dd"><font color="#ffdada">Giỏ hàng</font> </span>
                         </a>
                     </div> 
                 </div> 
@@ -96,7 +96,7 @@ session_start();
             <div class="center">
                 <ul class="menu">
                 <li id="danhmucsp">
-                    <i style='font-size:24px' class='fas'></i> <b>Danh sách sản phẩm</b>
+                    <i style='font-size:24px' class='fas'>&#xf0c9;</i> <b>Danh sách sản phẩm</b>
                     <ul class="dssp">
                         <?php
                         $loai = "SELECT * FROM loaisanpham WHERE BiXoa = 0";

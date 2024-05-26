@@ -27,9 +27,6 @@ switch ($mod) {
     case 'huy': 
         include "../qlyDonHang/huy.php";
         break;
-    case 'in': 
-        include "../qlyDonHang/in.php";
-        break;
     case 'chitiet': 
         include "../qlyDonHang/chitiet.php";
         break;

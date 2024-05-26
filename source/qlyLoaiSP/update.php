@@ -42,7 +42,7 @@ echo '<form action="/D&KShoes/source/qlyLoaiSP/index.php?mod=update&id='.$id.'" 
     echo'<p><input id="TenLoaiSanPham" type="text" size="50" name="TenLoaiSanPham" value="'.$row['TenLoaiSanPham'].'"/></p>';
     ?>
                 
-            <p><input type='submit' name="editloaisp" value='Thêm sản phẩm' onclick=" return Check()" />
+            <p><input type='submit' name="editloaisp" value='Update' onclick=" return Check()" />
             <a href='/D&KShoes/source/qlyLoaiSP/index.php?mod=panel'>Quay lại</a></p>
     </form>
 </div>

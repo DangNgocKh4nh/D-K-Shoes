@@ -21,12 +21,48 @@
             echo '<div class="list">';
         }
         echo''.$id.'. '.$name.'';
-        echo '<div class="tool"><a href="/D&KShoes/source/qlyLoaiSP/index.php?mod=update&id='.$id.'"><i class="far fa-edit"></i></a>  ';
-        if($xoa == 1) {
-            echo '<a href="/D&KShoes/source/qlyLoaiSP/index.php?mod=restore&id='.$id.'"><i class="fas fa-trash-restore-alt"></i></a>';
+        echo '<div class="tool">
+        <a href="/D&KShoes/source/qlyLoaiSp/index.php?mod=update&id='.$row['MaLoaiSanPham'].'">
+            <button style="
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Update</button>
+        </a>  ';
+
+        if ($row['BiXoa'] == 1) {
+        echo '<a href="/D&KShoes/source/qlyLoaiSp/index.php?mod=restore&id='.$row['MaLoaiSanPham'].'">
+            <button style="
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Khôi phục</button>
+          </a>';
         } else {
-            echo '<a href="/D&KShoes/source/qlyLoaiSP/index.php?mod=del&id='.$id.'"><i class="far fa-trash-alt"></i></a>';
+        echo '<a href="/D&KShoes/source/qlyLoaiSp/index.php?mod=del&id='.$row['MaLoaiSanPham'].'">
+            <button style="
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+                margin: 5px;
+            ">Xóa</button>
+          </a>';
         }
+
         echo '</div></div>';
     }
 ?>

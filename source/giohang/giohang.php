@@ -70,11 +70,15 @@ $ok=1;
     $tongtien = $tongtien + $thanhtien;
     echo '<td width="10%"style="border:1px solid #ebebeb; text-align: center;"><font color="##008744"><b>';
     echo number_format($thanhtien, 0).' đ</b></font></td>';
-    echo '<td width="5%"style="border:1px solid #ebebeb; text-align: center;"><a href="../giohang/index.php?mod=xoa&id='.$row['MaSanPham'].'"><i class="far fa-trash-alt" aria-hidden="true" style="
-    font-size: 25px;
-    text-decoration: none;
-    color: #444;
-"></i></a></td>';
+    echo '<td width="5%" style="border:1px solid #ebebeb; text-align: center;"><form action="../giohang/index.php" method="xoa" style="margin: 0;">
+            <input type="hidden" name="mod" value="xoa">
+            <input type="hidden" name="id" value="'.$row['MaSanPham'].'">
+            <button type="submit" style="font-size: 15px; background-color: #ff0000; color: #ffffff; border: none; padding: 4px 20px; cursor: pointer; display: inline-block; text-align: top;
+            ">
+            Xóa
+            </button>
+        </form>
+    </td>';
     
     echo'</tr>';
   }

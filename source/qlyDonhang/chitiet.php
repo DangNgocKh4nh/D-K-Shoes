@@ -50,7 +50,6 @@ if(isset($_GET['id'])) {
     echo ' <a class="submit1" href="../qlyDonhang/index.php?mod=thanhtoan&id='.$row['MaDonDatHang'].'">Thanh toán</a>';
     echo ' <a class="submit1" href="../qlyDonhang/index.php?mod=chuathanhtoan&id='.$row['MaDonDatHang'].'">Chưa thanh toán</a>';
     echo ' <a class="submit2" href="../qlyDonhang/index.php?mod=huy&id='.$row['MaDonDatHang'].'">Hủy đơn hàng</a>';
-    echo ' <a class="submit3" href="../qlyDonhang/index.php?mod=in&id='.$row['MaDonDatHang'].'">In hóa đơn</a>';
     echo '</div><div class="list">';
     echo 'Các sản phẩm: ';
     $stt = 1;
