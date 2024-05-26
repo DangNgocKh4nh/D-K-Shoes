@@ -45,13 +45,13 @@ while($dsdonhang = mysqli_fetch_array($dsdh)) {
     echo'</tr></td>';
     }
 echo'</table>';
-echo '<div class="info"><p  style="margin: 10px 20px 10px 20px;"><b>Thông tin của tôi</b></p>
-    <p style="margin: 10px 20px 10px 20px;">Họ tên: '.$user['HoTen'].'</p>
-    <p style="margin: 10px 20px 10px 20px;">Địa chỉ: '.$user['DiaChi'].'</p>
-    <p style="margin: 10px 20px 10px 20px;">Điện thoại: '.$user['DienThoai'].'</p>
-    <p style="margin: 10px 20px 10px 20px;">Email: '.$user['Email'].'</p>
-    <p style="margin: 10px 20px 10px 20px;">Ngày sinh: '.$user['NgaySinh'].'</p>
-    <p style="margin: 10px 20px 10px 20px;"><a href="../taikhoan/index.php?mod=capnhat&id='.$user['MaTaiKhoan'].'" class="submit3">Cập nhật thông tin</a></p>
+echo '<div class="info"><p  style="margin-right: 5px; margin-left: 5px;"><b>Thông tin của tôi</b></p>
+    <p style="margin-right: 5px; margin-left: 5px;">Họ tên: '.$user['HoTen'].'</p>
+    <p style="margin-right: 5px; margin-left: 5px;">Địa chỉ: '.$user['DiaChi'].'</p>
+    <p style="margin-right: 5px; margin-left: 5px;">Điện thoại: '.$user['DienThoai'].'</p>
+    <p style="margin-right: 5px; margin-left: 5px;">Email: '.$user['Email'].'</p>
+    <p style="margin-right: 5px; margin-left: 5px;">Ngày sinh: '.$user['NgaySinh'].'</p>
+    <p style="margin-right: 5px; margin-left: 5px;"><a href="../taikhoan/index.php?mod=capnhat&id='.$user['MaTaiKhoan'].'" class="submit3">Cập nhật thông tin</a></p>
     </div></div>';
 
 } 

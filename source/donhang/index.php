@@ -18,7 +18,7 @@ switch ($mod) {
         break;
 }
 } else {
-    ChangeURL('/source/dangnhap.php');
+    ChangeURL('/dangnhap.php');
 }
 
 ?>
