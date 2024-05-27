@@ -117,7 +117,7 @@ echo '<form action="?mod=update&id='.$id.'" method="POST">';
             ?>
           
             <p><input type='submit' name="updatesp" value='Cập nhật sản phẩm' onclick=" return Check()" />
-            <a href='/D&KShoes/qlySanPham/index.php?mod=panel'>Quay lại</a></p>
+            <a href='/D&KShoes/source/qlySanPham/index.php?mod=panel'>Quay lại</a></p>
     </form>
 </div>
 <?php

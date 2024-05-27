@@ -26,10 +26,10 @@
         } else {
             echo '<div class="list">';
         }
-        echo ''.$row['MaSanPham'].'. '.$row['TenSanPham'].' - Giá: ';
+        echo ''.$row['MaSanPham'].'. '.$row['TenSanPham'].' <br/>Giá: ';
         echo number_format($row['GiaSanPham'], 0).'₫<br>';
-        echo 'Số lượng hàng: '.$row['SoLuong'].' - Ngày nhập: '.$row['NgayNhap'].'';
-        echo '<br/>Thương hiệu: '.$hsx['TenHangSanXuat'].' - Loại: '.$lsp['TenLoaiSanPham'].'';
+        echo 'Số lượng hàng: '.$row['SoLuong'].' <br/>Ngày nhập: '.$row['NgayNhap'].'';
+        echo '<br/>Thương hiệu: '.$hsx['TenHangSanXuat'].' <br/>Loại: '.$lsp['TenLoaiSanPham'].'';
         echo '<br/><img width="100" height="100" src="/D&KShoes/source/images/'.$row['HinhURL'].'"><br/>';
         echo '<div class="tool">
         <a href="/D&KShoes/source/qlySanPham/index.php?mod=update&id='.$row['MaSanPham'].'">

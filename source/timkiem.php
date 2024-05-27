@@ -8,7 +8,7 @@ if (isset($_REQUEST['ok']))
 
     // Nếu $search rỗng thì báo lỗi, tức là người dùng chưa nhập liệu mà đã nhấn submit.
     if (empty($search)) {
-        echo "Yeu cau nhap du lieu vao o trong";
+        echo "<div class='mainmenu'><p><h2 style='font-weight: normal;'>Yêu cầu nhập dữ liệu vào ô trống</h2></p>";
     } 
     else
     {

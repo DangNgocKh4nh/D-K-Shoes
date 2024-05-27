@@ -23,7 +23,7 @@
         echo 'User';
     }
     echo'<br/>';
-    echo'Họ tên: '.$row['HoTen'].' - SDT: '.$row['DienThoai'].' - Ngày sinh: '.$row['NgaySinh'].' - Email: '.$row['Email'].' <Br/>Địa chỉ: '.$row['DiaChi'].'        ';
+    echo'Họ tên: '.$row['HoTen'].'  <br/> SDT: '.$row['DienThoai'].' <br/> Ngày sinh: '.$row['NgaySinh'].' <br/> Email: '.$row['Email'].' <Br/>Địa chỉ: '.$row['DiaChi'].'        ';
     echo '<div class="tool">
         <a href="/D&KShoes/source/qlyTaiKhoan/index.php?mod=sua&id='.$row['MaTaiKhoan'].'">
             <button style="

@@ -5,15 +5,15 @@
 $sql = "SELECT * FROM dondathang";
 $query = mysqli_query($connection, $sql);
 while ($row = mysqli_fetch_array($query)) {
-    echo '<div class="list">Mã đơn: '.$row['MaDonDatHang'].' - Ngày lập: '.$row['NgayLap'].' - Khách hàng:';
+    echo '<div class="list">Mã đơn: '.$row['MaDonDatHang'].' <br/> Ngày lập: '.$row['NgayLap'].' <br/> Khách hàng:';
     $u = "SELECT * FROM taikhoan WHERE MaTaiKhoan = '".$row['MaTaiKhoan']."'";
     $qr = mysqli_query($connection, $u);
     $user = mysqli_fetch_array($qr);
-    echo ''.$user['HoTen'].'';
+    echo ''.$user['HoTen'].'<br/>';
     $tt = "SELECT * FROM tinhtrang WHERE MaTinhTrang = '".$row['MaTinhTrang']."'";
     $qrtt = mysqli_query($connection, $tt);
     $tinhtrang = mysqli_fetch_array($qrtt);
-    echo ' - Tình trạng: '.$tinhtrang['TenTinhTrang'].'';
+    echo ' Tình trạng: '.$tinhtrang['TenTinhTrang'].'';
     echo '<br/> >> <a href="../qlyDonhang/index.php?mod=chitiet&id='.$row['MaDonDatHang'].'">Chi tiết</a>';
     echo '</div>';
 
